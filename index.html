@@ -15,16 +15,52 @@
 <body>
     <div class="container">
         <header class="cabecalho">
-            <img src="./img/logo.svg" alt="Logomarca do Alura Dev" class="cabecalho__logo">
-            <div class="cabecalho__busca">
-                <input type="text" class="busca__texto" placeholder="Busque por algo" />
-            </div>
+            <img class="cabecalho__logo" src="./img/logo.svg" alt="Logomarca do Alura Dev">
+            <input class="buscar__texto" type="search" placeholder="Busque por algo" />
             <div class="cabecalho__perfil">
-                <img src="./img/foto-perfil.svg" alt="Foto de perfil do Harry" class="perfil__foto">
+                <img class="perfil__foto" src="./img/foto-perfil.svg" alt="Foto de perfil do Harry">
                 <p class="perfil__nome">Harry</p>
             </div>
         </header>
+        <main class="conteudo">
+            <section class="menu">
+                <h2 class="tilulo__sessao">menu</h2>
+                <a href="#" class="menu__item">
+                    <div class="item__icone topico--ativo">
+                        <img src="./img/icone-codigo.svg" alt="Editor de Código" class="icone__imagem icone--ativo">
+                    </div>
+                    <p class="item__texto texto--ativo">Editor de código</p>
+                </a>
+                <a href="#" class="menu__item">
+                    <div class="item__icone">
+                        <img src="./img/icone-comunidade.svg" alt="Comunidade" class="icone__imagem">
+                    </div>
+                    <p class="item__texto">Comunidade</p>
+                </a>
 
+            </section>
+            <section class="conteudo__principal">
+                <textarea class="campo__codigo">
+                </textarea>
+            </section>
+            <section class="conteudo__secundario">
+                <div class="conteudo__secundario_sessao">
+                    <h2 class="tilulo__sessao">seu projeto</h2>
+                    <input class="titulo__projeto" type="text" placeholder="Nome do seu projeto" />
+                    <textarea class="descricao__projeto" rows="5" placeholder="Descrição do seu projeto"></textarea>
+                </div>
+                <div class="conteudo__secundario_sessao">
+                    <h2 class="tilulo__sessao">personalização</h2>
+                    <select class="selecao__linguagem">
+                        <option class="selecao__opcao">JavaScript</option>
+                        <option class="selecao__opcao">Java</option>
+                        <option class="selecao__opcao">PHP</option>
+                    </select>
+                    <input class="selecao__cor" type="color" value="#6BD1FF" />
+                </div>
+                <button class="botao__salvar">Salvar projeto</button>
+            </section>
+        </main>
     </div>
 </body>
 
