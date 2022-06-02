@@ -70,20 +70,42 @@ body {
 
 /*área do perfil*/
 .cabecalho__perfil {
+    width: 40%;
+
     display: flex;
-    justify-content: end;
     align-items: center;
+    justify-content: center;
     gap: 1rem;
 
-    padding-right: 15%;
+    border: none;
+    border-radius: 8px;
+
+    padding: 2%;
+
+    background: transparent;
+    color: var(--cor-texto-ativo)
 }
 
+.cabecalho__perfil:hover {
+    background-color: var(--cor-fundo-input);
+}
+
+.perfil {
+    display: flex;
+    justify-content: end;
+
+    margin-right: 10%;
+
+}
+
+/*Are de conteudo*/
 .conteudo {
     display: grid;
     grid-template-columns: 25% 50% 25%;
     align-items: flex-start;
 }
 
+/*estilização dos titulos de cada conteudo*/
 .tilulo__sessao {
     font-weight: 400;
     font-size: 0.75rem;
@@ -92,6 +114,7 @@ body {
     text-transform: uppercase;
 }
 
+/*estilização do menu lateral*/
 .menu {
     margin-left: 10%;
     display: flex;
@@ -131,6 +154,7 @@ body {
     line-height: 1.5rem;
 }
 
+/*estilização da alteração de inativo pra ativo*/
 .topico--ativo {
     background: var(--item-menu-ativo);
 }
@@ -143,15 +167,71 @@ body {
     color: var(--cor-texto-ativo);
 }
 
+.borda__campoCodigo {
+    background: #6BD1FF;
+
+    border-radius: 8px;
+
+    padding: 2rem;
+
+    margin-bottom: 2rem;
+}
+
 .campo__codigo {
-    width: 90%;
     height: 300px;
 
-    border: 2rem solid var(--item-menu-ativo);
+    background: #000000;
     border-radius: 8px;
 }
 
+.elipse {
+    width: 15px;
+    height: 15px;
+
+    border-radius: 50%;
+}
+
+.elipse--vermelha {
+    margin-left: 1rem;
+    margin-top: 1rem;
+    background: var(--elipse-vermelha);
+}
+
+.elipse--amarela {
+    background: var(--elipse-amarela);
+}
+
+.elipse--verde {
+    background: var(--elipse-verde);
+}
+
+.area__codigo {
+    margin: 1rem;
+    display: block;
+
+    background: #000000;
+
+    border: none;
+
+    color: var(--cor-texto-ativo);
+
+    resize: none;
+}
+
+.botao__highlight {
+    width: 100%;
+
+    padding: 1rem;
+
+    border: none;
+    border-radius: 8px;
+
+    background: var(--item-menu-inativo);
+    color: var(--cor-texto-ativo);
+}
+
 .conteudo__secundario {
+    margin-bottom: 5rem;
     padding: 0 10%;
 }
 
@@ -194,6 +274,7 @@ body {
     font-size: 1rem;
     color: #ffffff;
 
+    resize: none;
 }
 
 .descricao__projeto::placeholder {

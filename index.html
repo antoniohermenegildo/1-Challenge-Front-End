@@ -17,9 +17,11 @@
         <header class="cabecalho">
             <img class="cabecalho__logo" src="./img/logo.svg" alt="Logomarca do Alura Dev">
             <input class="buscar__texto" type="search" placeholder="Busque por algo" />
-            <div class="cabecalho__perfil">
-                <img class="perfil__foto" src="./img/foto-perfil.svg" alt="Foto de perfil do Harry">
-                <p class="perfil__nome">Harry</p>
+            <div class="perfil">
+                <button class="cabecalho__perfil">
+                    <img class="perfil__foto" src="./img/foto-perfil.svg" alt="Foto de perfil do Harry">
+                    <p class="perfil__nome">Harry</p>
+                </button>
             </div>
         </header>
         <main class="conteudo">
@@ -40,8 +42,28 @@
 
             </section>
             <section class="conteudo__principal">
-                <textarea class="campo__codigo">
-                </textarea>
+                <div class="borda__campoCodigo">
+                    <div class="campo__codigo">
+                        <button class="elipse elipse--vermelha"></button>
+                        <button class="elipse elipse--amarela"></button>
+                        <button class="elipse elipse--verde"></button>
+
+                        <textarea name="codigo" class="area__codigo" cols="70" rows="15">
+const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
+
+const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
+
+const unfold = (f, seed) => {
+    const go = (f, seed, acc) => {
+        const res = f(seed)
+        return res ? go(f, res[1], acc.concat([res[0]])) : acc
+    }
+return go(f, seed, [])
+}
+                    </textarea>
+                    </div>
+                </div>
+                <button class="botao__highlight">Visualizar com o highlight</button>
             </section>
             <section class="conteudo__secundario">
                 <div class="conteudo__secundario_sessao">
