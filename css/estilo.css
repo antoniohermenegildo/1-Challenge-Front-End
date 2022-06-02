@@ -71,6 +71,7 @@ body {
 /*área do perfil*/
 .cabecalho__perfil {
     width: 40%;
+    margin-right: 30px;
 
     display: flex;
     align-items: center;
@@ -93,9 +94,6 @@ body {
 .perfil {
     display: flex;
     justify-content: end;
-
-    margin-right: 10%;
-
 }
 
 /*Are de conteudo*/
@@ -109,7 +107,7 @@ body {
 .tilulo__sessao {
     font-weight: 400;
     font-size: 0.75rem;
-    line-height: 1.15rem;
+    line-height: 0.75rem;
     letter-spacing: 0.4em;
     text-transform: uppercase;
 }
@@ -150,7 +148,7 @@ body {
 
 .item__texto {
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 0.75rem;
     line-height: 1.5rem;
 }
 
@@ -185,9 +183,9 @@ body {
 }
 
 .elipse {
-    width: 15px;
-    height: 15px;
-
+    width: 10px;
+    height: 10px;
+    border: none;
     border-radius: 50%;
 }
 
@@ -208,6 +206,7 @@ body {
 .area__codigo {
     margin: 1rem;
     display: block;
+    width: 90%;
 
     background: #000000;
 
@@ -233,6 +232,8 @@ body {
 .conteudo__secundario {
     margin-bottom: 5rem;
     padding: 0 10%;
+
+    font-size: 0.75rem;
 }
 
 .conteudo__secundario_sessao {
@@ -252,7 +253,6 @@ body {
 
     padding: 1rem;
 
-    font-size: 1rem;
     color: #ffffff;
 
 }
@@ -271,7 +271,6 @@ body {
 
     padding: 1rem;
 
-    font-size: 1rem;
     color: #ffffff;
 
     resize: none;
@@ -291,7 +290,6 @@ body {
 
     padding: 0.8rem;
 
-    font-size: 1rem;
     color: var(--cor-texto-inativo);
 
     cursor: pointer;
@@ -326,7 +324,6 @@ body {
     margin-bottom: 2rem;
 
     font-weight: 400;
-    font-size: 1rem;
     line-height: 1.5rem;
     text-align: center;
     cursor: pointer;
