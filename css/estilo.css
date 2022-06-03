@@ -182,7 +182,7 @@ body {
 
     border-radius: 8px;
 
-    padding: 2rem;
+    padding: 1rem;
 
     margin-bottom: 2rem;
 }
@@ -218,7 +218,7 @@ body {
 .area__codigo {
     margin: 1rem;
     display: block;
-    width: 90%;
+    width: 92%;
 
     background: #000000;
 
@@ -374,6 +374,10 @@ body {
         width: 100%;
 
         margin-bottom: 2rem;
+    }
+
+    .borda__campoCodigo {
+        padding: 1rem;
     }
 
     .conteudo__secundario {
