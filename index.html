@@ -16,13 +16,21 @@
     <div class="container">
         <header class="cabecalho">
             <img class="cabecalho__logo" src="./img/logo.svg" alt="Logomarca do Alura Dev">
+
+            <button class="icone__pesquisar">
+                <img src="./img/icone-pesquisar.svg" alt="pesquisar">
+            </button>
             <input class="buscar__texto" type="search" placeholder="Busque por algo" />
+
             <div class="perfil">
                 <button class="cabecalho__perfil">
                     <img class="perfil__foto" src="./img/foto-perfil.svg" alt="Foto de perfil do Harry">
                     <p class="perfil__nome">Harry</p>
                 </button>
             </div>
+            <button class="icone__menu">
+                <img src="./img/icone-hamburguer.svg" alt="menu">
+            </button>
         </header>
         <main class="conteudo">
             <section class="menu">
@@ -71,8 +79,8 @@ return go(f, seed, [])
                     <input class="titulo__projeto" type="text" placeholder="Nome do seu projeto" />
                     <textarea class="descricao__projeto" rows="5" placeholder="Descrição do seu projeto"></textarea>
                 </div>
-                <div class="conteudo__secundario_sessao">
-                    <h2 class="tilulo__sessao">personalização</h2>
+                <div class="conteudo__secundario_sessao personalizacao">
+                    <h2 class="tilulo__sessao titulo--personalizacao">personalização</h2>
                     <select class="selecao__linguagem">
                         <option class="selecao__opcao">JavaScript</option>
                         <option class="selecao__opcao">Java</option>

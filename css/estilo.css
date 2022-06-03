@@ -46,9 +46,16 @@ body {
 /*definindo espaçamento da logo*/
 .cabecalho__logo {
     padding-left: 10%;
+    max-width: 80%;
+    min-width: 80px;
+
 }
 
 /*criando o campo de busca do cabeçalho*/
+.icone__pesquisar {
+    display: none;
+}
+
 .buscar__texto {
     background-color: var(--cor-fundo-input);
 
@@ -69,6 +76,12 @@ body {
 }
 
 /*área do perfil*/
+
+.perfil {
+    display: flex;
+    justify-content: end;
+}
+
 .cabecalho__perfil {
     width: 40%;
     margin-right: 30px;
@@ -91,9 +104,8 @@ body {
     background-color: var(--cor-fundo-input);
 }
 
-.perfil {
-    display: flex;
-    justify-content: end;
+.icone__menu {
+    display: none;
 }
 
 /*Are de conteudo*/
@@ -327,4 +339,79 @@ body {
     line-height: 1.5rem;
     text-align: center;
     cursor: pointer;
+}
+
+@media screen and (max-width:768px) {
+    .cabecalho {
+        grid-template-columns: 25% 60% 15%;
+    }
+
+    .perfil {
+        display: none;
+    }
+
+    .icone__menu {
+        display: block;
+        width: 25px;
+        height: 25px;
+
+        justify-self: center;
+        background: transparent;
+        border: none;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .conteudo {
+        margin: 0 2rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .conteudo__principal {
+        width: 100%;
+
+        margin-bottom: 2rem;
+    }
+
+    .conteudo__secundario {
+        width: 100%;
+        padding: 0;
+
+    }
+
+    .personalizacao {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .titulo--personalizacao {
+        grid-column: 1/3;
+        grid-row: 1;
+    }
+
+}
+
+@media screen and (max-width:376px) {
+    .cabecalho {
+        grid-template-columns: 50% 25% 25%;
+    }
+
+    .icone__pesquisar {
+        display: block;
+        width: 25px;
+        height: 25px;
+
+        background: transparent;
+        border: none;
+
+        justify-self: end;
+    }
+
+    .buscar__texto {
+        display: none;
+    }
+
 }
